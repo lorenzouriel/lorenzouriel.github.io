@@ -1,6 +1,6 @@
 ---
 title: "Apaixonado pelo uv: O Melhor Gerenciador de Projetos Python"
-date: 2024-12-04 00:00:00:0000
+date: 2024-12-03 00:00:00:0000
 categories: [Python]
 tags: [python]
 ---
@@ -16,7 +16,7 @@ Já no início, a documentação deixa claro porque o `uv` se destaca entre outr
 
 Aqui está um gráfico de desempenho da documentação `uv` que demonstra sua vantagem de velocidade:
 
-![uv-performance](/assets/images/2024-12-04-apaixone-se-pelo-uv/uv-performance.svg)
+![uv-performance](/assets/images/2024-12-03-apaixone-se-pelo-uv/uv-performance.svg)
 
 E como utilizar/iniciar?
 
