@@ -1,5 +1,5 @@
 ---
-title: "Apaixonado pelo uv: O Melhor Gerenciador de Projetos Python"
+title: "Apaixonado pelo uv"
 date: 2024-12-03 00:00:00:0000
 categories: [Python]
 tags: [python]
