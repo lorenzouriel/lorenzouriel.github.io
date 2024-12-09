@@ -1,5 +1,5 @@
 ---
-title: "Maneiras de Utilizar Subquery"
+title: "Maneiras de Utilizar uma Subquery"
 date: 2024-12-09 00:00:00:0000
 categories: [SQL]
 tags: [sql]
