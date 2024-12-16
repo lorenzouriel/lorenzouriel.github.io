@@ -5,7 +5,7 @@ categories: [SQL]
 tags: [sql]
 ---
 
-Time Iron Man ou Time Cap? É exatamente assim que me sinto quando debatemos o que é melhor: **CTEs** ou Subqueries.
+Time Iron Man ou Time Cap? É exatamente assim que me sinto quando debatemos o que é melhor: CTEs ou Subqueries.
 
 No início, é sempre a mesma pergunta: *“Se consigo fazer isso com uma Subquery, por que devo usar uma CTE?”*
 
