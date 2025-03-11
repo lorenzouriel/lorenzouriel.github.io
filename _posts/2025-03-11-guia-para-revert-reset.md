@@ -1,5 +1,5 @@
 ---
-title: "The Git Week: Um Guia para Git Revert, Reset e Checkout"
+title: "Um Guia para Git Revert, Reset e Checkout"
 date: 2025-03-11 00:00:00:0000
 categories: [Git & GitHub]
 tags: [git & github]
