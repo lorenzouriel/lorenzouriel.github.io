@@ -1,8 +1,8 @@
 ---
 title: "MVC Pode Ajudar Você a Criar Melhores Aplicações de Dados"
 date: 2025-03-12 00:00:00:0000
-categories: [Git & GitHub]
-tags: [git & github]
+categories: [Python]
+tags: [python]
 ---
 
 Aprender padrões de design de software pode ajudar você a criar soluções melhores.
