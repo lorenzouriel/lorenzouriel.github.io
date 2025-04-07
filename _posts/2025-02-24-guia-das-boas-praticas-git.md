@@ -136,7 +136,11 @@ Use hooks de **post-commit** para automatizar tarefas após o **push** para um r
 
 Isso ajuda a minimizar erros e a criar um processo inicial de deploy automatizado.
 
---
+---
+
+Criei um guia completo para te ajudar a entender **Git & GitHub** — [confere lá!](https://lorenzouriel.gumroad.com/l/giqht)
+
+---
 
 *Obrigado por ler até aqui!*
 

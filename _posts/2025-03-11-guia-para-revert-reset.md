@@ -134,7 +134,11 @@ git restore filename.txt
 
 Esses são apenas alguns exemplos de solução de problemas e casos de uso. Claro, há outros comandos úteis para ajudar a diagnosticar problemas, que abordaremos em outro artigo.
 
---
+---
+
+Criei um guia completo para te ajudar a entender **Git & GitHub** — [confere lá!](https://lorenzouriel.gumroad.com/l/giqht)
+
+---
 
 *Obrigado por ler até aqui!*
 

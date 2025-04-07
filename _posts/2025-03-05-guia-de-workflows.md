@@ -153,7 +153,11 @@ git push origin feature-article
 ![forking-workflow](/assets/images/2025-03-05-guia-de-workflows/forking-workflow.png)
 
 
---
+---
+
+Criei um guia completo para te ajudar a entender **Git & GitHub** — [confere lá!](https://lorenzouriel.gumroad.com/l/giqht)
+
+---
 
 *Obrigado por ler até aqui!*
 

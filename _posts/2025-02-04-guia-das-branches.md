@@ -385,7 +385,11 @@ git merge release/1.0.0
 
 - Isso garante que eventuais correções feitas durante a release não sejam perdidas no fluxo de desenvolvimento.
 
---
+---
+
+Criei um guia completo para te ajudar a entender **Git & GitHub** — [confere lá!](https://lorenzouriel.gumroad.com/l/giqht)
+
+---
 
 *Obrigado por ler até aqui!*
 
