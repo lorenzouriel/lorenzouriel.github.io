@@ -7,14 +7,14 @@ tags: [airflow]
 
 Uma das coisas que fiz este ano foi estudar sobre AirFlow. Estou mais focado em entender como tecnologias Open-Source podem ajudar nas atividades do dia a dia da minha empresa.
 
-Então, este artigo é uma reflexão de todas as minhas anotações sobre AirFlow. No próximo, pretendo criar um projeto prático usando Astro.
+Então, este artigo é uma reflexo de todas as minhas anotações sobre AirFlow. No próximo, pretendo criar um projeto prático usando Astro.
 
 Vamos começar!
 
 ## Apache Airflow
 Apache Airflow é uma plataforma open source projetada para criar, agendar e monitorar workflows de forma programática.
 
-Originalmente desenvolvido pela Airbnb (amo vocês) em 2014 e posteriormente doado para a Apache Software Foundation, o Airflow se tornou um exemplo a ser seguido na orquestração de pipelines de dados.
+Ele foi desenvolvido pela Airbnb (amo vocês) em 2014 e posteriormente doado para a Apache Software Foundation, o Airflow se tornou um exemplo a ser seguido na orquestração de pipelines de dados.
 
 As principais vantagens para mim são:
 
@@ -72,9 +72,9 @@ Fornece a UI/API para monitorar e gerenciar DAGs. Pode ser balanceado para lidar
 - Gerenciamento de variáveis e conexões  
 - Controle de acesso de usuários
 
-## Core Concepts
+## Conceitos Principais
 
-Acredito que você já ouviu a palavra **DAG** em alguma conversa — é mais simples do que parece. Isso não é o que vai te dar dor de cabeça quando começar a usar.
+Acredito que você já ouviu a palavra **DAG** em alguma conversa, é mais simples do que parece. Isso não é o que vai te dar dor de cabeça quando começar a usar.
 
 ![dags](/assets/images/2025-05-27-airflow-get-started/dag.png)
 
@@ -138,8 +138,6 @@ with DAG(
 ):
     EmptyOperator(task_id="tarefa_exemplo")
 ```
-
-Reduz repetição e torna o código mais limpo.
 
 ### 2. Usando o **Construtor Padrão (Standard Constructor)**
 
@@ -224,7 +222,7 @@ DAGs sempre serão executadas de duas formas:
 
 Claro! Aqui está o texto reescrito com melhorias de clareza, gramática e estilo, mantendo a linguagem acessível e focada em exemplos práticos:
 
-## Gerenciando Dependências entre DAGs
+## Gerenciando Dependências entre Tasks
 
 Em uma DAG do Airflow, as tasks raramente funcionam isoladamente. Normalmente, uma task depende da execução de outras tasks anteriores (upstream) e, por sua vez, outras tasks dependem dela (downstream).
 
@@ -244,7 +242,7 @@ task1 >> [task2, task3] >> task4
 
 ### Usando os Métodos `set_upstream` e `set_downstream`
 
-Se preferir uma abordagem mais explícita ou programática, você pode usar os métodos `set_upstream()` e `set_downstream()`:
+Se preferir uma abordagem mais explícita ou programática, você pode usar os métodos `set_upstream()` e `set_downstream()`.
 
 ```python
 task1.set_downstream(task2)  # task1 -> task2
@@ -253,7 +251,7 @@ task2.set_upstream(task1)    # equivalente à linha acima
 
 ### Utilizando `cross_downstream` para Múltiplas Dependências
 
-Quando você deseja que todas as tasks de uma lista dependam de todas as tasks de outra lista, use o utilitário `cross_downstream`:
+Quando você deseja que todas as tasks de uma lista dependam de todas as tasks de outra lista, use o utilitário `cross_downstream`.
 
 ```python
 from airflow.models.baseoperator import cross_downstream
@@ -268,7 +266,7 @@ cross_downstream([op1, op2], [op3, op4])
 
 ### Utilizando `chain` para Sequências de Tasks
 
-Para criar sequências de tasks de forma simples e elegante, o Airflow oferece o atalho `chain`:
+Para criar sequências de tasks de forma simples e elegante, o Airflow oferece o atalho `chain`.
 
 ```python
 from airflow.models.baseoperator import chain
@@ -311,7 +309,6 @@ with DAG(
 ```
 
 **Saída esperada:**
-
 ```
 [print_date] 2024-06-20  
 [echo_hello] Hello Airflow!
@@ -321,16 +318,15 @@ with DAG(
 
 * **DAG**: Executa diariamente a partir de 1 de janeiro de 2024
 * **Tarefa 1**: Mostra a data atual
-* **Tarefa 2**: Mostra uma saudação
+* **Tarefa 2**: Mostra um Olá, Mundo!
 * **Dependência**: task1 precisa finalizar antes da task2 iniciar
 
 **Como usar:**
-
 * Salve como `simple_dag.py` na sua pasta `dags/`
 * O Airflow detectará automaticamente
-* Dispare via UI ou aguarde a execução programada
+* Dispare manualmente via UI ou aguarde a execução programada
 
-Executaremos esse exemplo no próximo tutorial, onde também introduzirei o **Astro CLI** para gerenciamento fluido do Airflow.
+Executaremos esse exemplo no próximo tutorial, onde vou falar de **Astro CLI** para gerenciamento do Airflow.
 
 ---
 
