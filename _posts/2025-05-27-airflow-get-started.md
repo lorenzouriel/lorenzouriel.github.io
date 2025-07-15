@@ -24,8 +24,6 @@ As principais vantagens para mim são:
 
 Airflow é particularmente útil para **Data Engineering**, na automação de pipelines ETL/ELT. Mas você pode utilizá-lo com **DevOps** para agendar tarefas de infraestrutura ou com **Data Science** para orquestrar o treinamento de modelos de ML.
 
-{% include adsense-bottom.html %}
-
 ## Core Architectural Components
 Apache Airflow segue uma arquitetura modular e distribuída. Ele possui componentes principais que o tornam o que é, cada um com sua responsabilidade única.
 
